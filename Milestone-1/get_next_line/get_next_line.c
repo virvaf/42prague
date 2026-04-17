@@ -3,11 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: virva <virva@student.42.fr>                +#+  +:+       +#+        */
+/*   By: fvirva <fvirva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 21:30:00 by virva             #+#    #+#             */
-/*   Updated: 2026/02/24 21:30:10 by virva            ###   ########.fr       */
+/*   Updated: 2026/04/17 18:17:20 by fvirva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+char *get_next_line(int fd)
+{
+    
+}
