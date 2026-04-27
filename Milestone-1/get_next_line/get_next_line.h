@@ -6,7 +6,7 @@
 /*   By: fvirva <fvirva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 21:29:41 by virva             #+#    #+#             */
-/*   Updated: 2026/04/17 18:17:26 by fvirva           ###   ########.fr       */
+/*   Updated: 2026/04/25 23:10:43 by fvirva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,13 @@
 char *get_next_line(int fd);
 
 /*   Utils prototypes   */
+size_t	ft_strlen(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strdup(const char *s);
+
+#ifndef BUFFER_SIZE
+# define BUFFER_SIZE 5
+#endif
 
 #endif

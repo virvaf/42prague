@@ -6,11 +6,21 @@
 /*   By: fvirva <fvirva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 21:30:20 by virva             #+#    #+#             */
-/*   Updated: 2026/04/17 14:49:01 by fvirva           ###   ########.fr       */
+/*   Updated: 2026/04/20 22:55:43 by fvirva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	len;
+
+	len = 0;
+	while (s[len] != '\0')
+		len++;
+	return (len);
+}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
