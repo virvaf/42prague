@@ -6,7 +6,7 @@
 /*   By: fvirva <fvirva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 21:30:20 by virva             #+#    #+#             */
-/*   Updated: 2026/04/27 16:32:12 by fvirva           ###   ########.fr       */
+/*   Updated: 2026/06/16 17:51:16 by fvirva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,4 +92,27 @@ char	*ft_strdup(const char *s)
 	}
 	cpy[i] = '\0';
 	return (cpy);
+}
+
+char	*ft_strjoin(char const *s1, char const *s2)
+{
+	char	*res;
+
+	res = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!res)
+		return (NULL);
+	while (*s1)
+	{
+		*res = *s1;
+		res++;
+		s1++;
+	}
+	while (*s2)
+	{
+		*res = *s2;
+		res++;
+		s2++;
+	}
+	*res = '\0';
+	return (res);
 }
