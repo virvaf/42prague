@@ -6,7 +6,7 @@
 /*   By: fvirva <fvirva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 21:29:41 by virva             #+#    #+#             */
-/*   Updated: 2026/06/16 17:51:47 by fvirva           ###   ########.fr       */
+/*   Updated: 2026/06/19 10:36:34 by fvirva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char *get_next_line(int fd);
 /*   Utils prototypes   */
 size_t	ft_strlen(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strrchr(const char *s, int c);
+char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);
 char	*ft_strjoin(char const *s1, char const *s2);
 

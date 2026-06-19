@@ -6,7 +6,7 @@
 /*   By: fvirva <fvirva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 21:30:20 by virva             #+#    #+#             */
-/*   Updated: 2026/06/16 17:51:16 by fvirva           ###   ########.fr       */
+/*   Updated: 2026/06/19 10:36:28 by fvirva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,22 +50,20 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (NULL);
 }
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	char	*ptr;
-	char	*last;
 
 	ptr = (char *)s;
-	last = NULL;
 	while (1)
 	{
 		if (*ptr == (char)c)
-			last = ptr;
+			return (ptr);
 		if (*ptr == '\0')
 			break ;
 		ptr++;
 	}
-	return (last);
+	return (NULL);
 }
 
 char	*ft_strdup(const char *s)
