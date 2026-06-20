@@ -6,7 +6,7 @@
 /*   By: fvirva <fvirva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 21:30:20 by virva             #+#    #+#             */
-/*   Updated: 2026/06/19 10:36:28 by fvirva           ###   ########.fr       */
+/*   Updated: 2026/06/20 09:03:56 by fvirva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,22 +95,20 @@ char	*ft_strdup(const char *s)
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*res;
+	char	*start;
 
 	res = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!res)
 		return (NULL);
+	start = res;
 	while (*s1)
 	{
-		*res = *s1;
-		res++;
-		s1++;
+		*res++ = *s1++;
 	}
 	while (*s2)
 	{
-		*res = *s2;
-		res++;
-		s2++;
+		*res++ = *s2++;
 	}
 	*res = '\0';
-	return (res);
+	return (start);
 }

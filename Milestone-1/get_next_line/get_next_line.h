@@ -6,7 +6,7 @@
 /*   By: fvirva <fvirva@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 21:29:41 by virva             #+#    #+#             */
-/*   Updated: 2026/06/19 10:36:34 by fvirva           ###   ########.fr       */
+/*   Updated: 2026/06/20 08:57:52 by fvirva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@
 # include <stdlib.h>
 
 /*   get_next_line prototypes   */
-char *get_next_line(int fd);
+static char *read_to_stash(int fd, char *stash);
+static char *extract_line(char **stash);
+static char	*last_line(char **stash);
+char        *get_next_line(int fd);
 
 /*   Utils prototypes   */
 size_t	ft_strlen(const char *s);
